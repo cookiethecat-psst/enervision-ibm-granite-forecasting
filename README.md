@@ -35,7 +35,7 @@ pip install -r requirements.txt
 cp .env.example .env
 
 # Add your IBM watsonx.ai credentials
-export WATSONX_API_KEY="your_api_key_here"
+export WATSONX_API_KEY="7d2qZqET-QBEVzxakf3vsXAWLWY0ZmcQ1fXDFAfmmPd_"
 export WATSONX_URL="https://us-south.ml.cloud.ibm.com"
 ```
 
