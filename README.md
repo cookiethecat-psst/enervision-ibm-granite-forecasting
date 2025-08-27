@@ -197,7 +197,7 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 This project was developed for the **IndiaAI Impact Hackathon** - Track 2: Short-term Energy Load Forecasting, sponsored by IBM Research India.
 
-**Team:** 3 members  
+**Team:** Rupantar Kar, Shirisha Mangenapally, Sadhu Sri Harshitha  
 **Track:** Short-term energy load forecasting  
 **Submission Date:** August 30, 2025
 
@@ -205,9 +205,9 @@ This project was developed for the **IndiaAI Impact Hackathon** - Track 2: Short
 
 For questions about this project or collaboration opportunities:
 
-- **Email:** 
-- **LinkedIn:** 
-- **Twitter:** 
+- **Email 1:** rupantar.mitmpl2023@learner.manipal.edu
+- **Email 2:** mangenapallyshirisha123@gmail.com
+- **Email 3:** itssriharshitha@gmail.com
 
 ---
 
