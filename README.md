@@ -109,11 +109,11 @@ print(f"Confidence interval: {forecast['confidence_intervals']}")
 enervision/
 ├── src/
 │   ├── enervision/
-│   │   ├── __init__.py
-│   │   ├── models/          # IBM Granite TTM integration
-│   │   ├── data/            # Data processing utilities
-│   │   ├── api/             # FastAPI backend
-│   │   └── utils/           # Helper functions
+│      ├── __init__.py
+│      ├── models/          # IBM Granite TTM integration
+│      ├── data/            # Data processing utilities
+│      ├── api/             # FastAPI backend
+│      └── utils/           # Helper functions
 ├── notebooks/               # Jupyter demos
 ├── data/                   # Sample datasets
 ├── tests/                  # Unit tests
