@@ -1,0 +1,33 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: enervision
+      POSTGRES_PASSWORD: enervision
+      POSTGRES_DB: enervision
+    ports: ["5432:5432"]
+    volumes: [ "pgdata:/var/lib/postgresql/data" ]
+
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+    command: ["redis-server","--save","60","1000","--loglevel","warning"]
+    volumes: [ "redisdata:/data" ]
+
+  influxdb:
+    image: influxdb:2.7
+    ports: ["8086:8086"]
+    environment:
+      DOCKER_INFLUXDB_INIT_MODE: setup
+      DOCKER_INFLUXDB_INIT_USERNAME: admin
+      DOCKER_INFLUXDB_INIT_PASSWORD: admin123
+      DOCKER_INFLUXDB_INIT_ORG: enervision
+      DOCKER_INFLUXDB_INIT_BUCKET: enervision
+      DOCKER_INFLUXDB_INIT_RETENTION: 30d
+      DOCKER_INFLUXDB_INIT_ADMIN_TOKEN: dev-token
+    volumes: [ "influxdata:/var/lib/influxdb2" ]
+
+volumes:
+  pgdata:
+  redisdata:
+  influxdata:

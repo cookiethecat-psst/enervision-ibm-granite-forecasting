@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+openai
+python-dotenv
+httpx
+pydantic
+numpy
+scipy
+scikit-learn
+joblib
+threadpoolctl
+influxdb-client
+psycopg2-binary
+redis
+python-dateutil
+pandas
+requests

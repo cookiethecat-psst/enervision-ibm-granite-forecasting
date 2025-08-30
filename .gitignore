@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+*.egg-info/
+
+# Node / React
+node_modules/
+build/
+dist/
+npm-debug.log
+yarn-error.log
+
+# Environment & Config
+*.env
+.env.*
+config.json
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
