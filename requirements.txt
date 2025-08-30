@@ -1,0 +1,87 @@
+# EnerVision - IBM Granite TTM Energy Forecasting
+# Python Dependencies for IndiaAI Impact Hackathon 2025
+
+# Core Dependencies
+numpy==1.24.3
+pandas==2.0.3
+torch==2.0.1
+scikit-learn==1.3.0
+scipy==1.11.1
+
+# IBM watsonx.ai Integration
+ibm-watsonx-ai==0.2.5
+ibm-cloud-sdk-core==3.18.0
+
+# Time Series & ML
+transformers==4.35.0
+statsmodels==0.14.0
+pytorch-forecasting==1.0.0
+sktime==0.24.0
+
+# API & Backend
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.4.2
+python-multipart==0.0.6
+httpx==0.25.0
+asyncio==3.4.3
+
+# Data Processing
+pyyaml==6.0.1
+python-dotenv==1.0.0
+pytz==2023.3
+python-dateutil==2.8.2
+
+# Visualization & Analysis
+matplotlib==3.7.2
+seaborn==0.12.2
+plotly==5.17.0
+
+# Database & Caching
+redis==5.0.1
+influxdb-client==1.38.0
+pymongo==4.5.0
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+unittest-xml-reporting==3.2.0
+mock==5.1.0
+
+# Development Tools
+tqdm==4.66.1
+ipython==8.17.2
+jupyter==1.0.0
+notebook==7.0.6
+ipywidgets==8.1.1
+
+# Monitoring & Logging
+prometheus-client==0.19.0
+python-json-logger==2.0.7
+
+# Deployment
+gunicorn==21.2.0
+docker==6.1.3
+kubernetes==28.1.0
+
+# Optional GPU Support (uncomment if CUDA available)
+# torch==2.0.1+cu118
+# torchvision==0.15.2+cu118
+# torchaudio==2.0.2+cu118
+
+# Production optimizations
+onnx==1.15.0
+onnxruntime==1.16.3
+tensorrt==8.6.1  # For NVIDIA GPU inference optimization
+
+# Indian Context Dependencies
+holidays==0.35  # For Indian festival calendar
+geopy==2.4.0  # For location-based climate zones
+timezonefinder==6.2.0  # For timezone handling
+
+# Documentation
+sphinx==7.2.6
+sphinx-rtd-theme==1.3.0
+mkdocs==1.5.3
+mkdocs-material==9.4.14
