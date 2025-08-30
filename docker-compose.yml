@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    container_name: enervision-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  frontend:
+    build: ./frontend
+    container_name: enervision-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/usr/src/app
+    stdin_open: true
+    tty: true
+
+  postgres:
+    image: postgres:14
+    container_name: enervision-db
+    restart: always
+    environment:
+      POSTGRES_USER: enervision
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: energydb
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:6
+    container_name: enervision-redis
+    ports:
+      - "6379:6379"
